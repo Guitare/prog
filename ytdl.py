@@ -17,14 +17,12 @@ import os
 global var
 
 def collecturl(): #recepteur/ecouteur url
-    global var
     print "YTDL v.0.1.a by guitare"
     print "collez l'url puis tapez entrer..."
     var = raw_input()
     youyou(var)
 
 def youyou (url):
-    global var
     var = url
     os.system("youtube-dl "+ url) #os.system(cmd) exécute cmd
     print "Download succees!"
